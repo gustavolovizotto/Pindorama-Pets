@@ -158,7 +158,6 @@ flex-shrink: 0;
     position: absolute;
     top: 0rem;
     left: 56.06rem;
-    
   }
   
 .footer-container{
@@ -178,7 +177,7 @@ width: 12.5rem;
 height: 12.5rem;
 flex-shrink: 0;
 position: relative;
-top: 0.06rem;
+top: 2.58rem;
 left: 23.12rem;
 right: 84.38rem;
 bottom: 4.44rem;
@@ -222,7 +221,6 @@ text-transform: uppercase;
     padding: 1rem;
     text-align: left;
     box-sizing: border-box;
-    overflow: visible;
 }
 
 .footer-section-2{
