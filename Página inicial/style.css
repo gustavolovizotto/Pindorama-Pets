@@ -51,6 +51,8 @@ font-weight: 400;
 line-height: normal;
 transition: color 0.3s;
 text-decoration: none;
+border-radius: 0.625rem;
+transition: background 300ms ease-in-out;
 }
 
 .nav-links a:hover {
@@ -111,13 +113,12 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
 border: none;
-transition: background-color 0.3s ease, transform 0.3s ease;
+transition: background-color 300ms ease, transform 300ms ease;
 }
 
 .bc-button:hover{
     background-color: #7CCBE0;
     color: var(--Colors-blue1100, #063643);
-    
 }
 
 .animal1{
