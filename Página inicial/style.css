@@ -63,7 +63,7 @@ background: rgba(107, 183, 203, 0.40);
 }
 
 .banner-central {
-    position: relative;
+position: relative;
 width: 73.75rem;
 height: 28.125rem;
 flex-shrink: 0;
@@ -161,17 +161,121 @@ flex-shrink: 0;
     top: 0rem;
     left: 56.06rem;
   }
-  
-  footer .container {
-    width: 120rem;
-    height: 17rem;
-    flex-shrink: 0;
-    border-top: 1px solid var(--Colors-blue300, #C7EBFB);
-    border-bottom: 1px solid var(--Colors-blue300, #C7EBFB);
-    background: #F8F8FF;
-    display: flex; /* Correção aqui */
-    align-items: center; /* Centraliza verticalmente */
-    gap: 8.06rem;
+
+.entre-contato span { 
+color: var(--Colors-blue1100, #063643);
+font-family: Inter;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.inf-contato{
+width: 26.25rem;
+height: 43.25rem;
+flex-shrink: 0;
+border-radius: 0.5rem 0rem 0rem 0.5rem;
+border: 1px solid rgba(6, 54, 67, 0.40);
+background: var(--Colors-white, #F8F8FF);
+position: relative;
+}
+
+.inf-contato p{
+color: var(--Colors-blue1100, #063643);
+font-family: Inter;
+font-size: 1.25rem;
+font-style: italic;
+font-weight: 400;
+line-height: 1.625rem; /* 130% */
+margin-left: 1.31rem;
+
+}
+
+
+.inf-contato h3 {
+    color: var(--Colors-blue1100, #063643);
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 2.5rem; /* Alterado de padding-bottom para margin-bottom */
+    margin-top: 3.19rem;
+    margin-left: 1.31rem;
+}
+
+.inf-contato > img:first-of-type{
+width: 21.875rem;
+height: 15.25975rem;
+flex-shrink: 0;
+border-radius: 0.25rem;
+border: 1px solid rgba(15, 99, 122, 0.40);
+margin-top: 4.38rem;
+display: block;  
+margin-left: auto;  
+margin-right: auto;  
+margin-bottom: 2.93rem;
+}
+
+.form-social-links{
+gap: 0.5rem;
+display: flex;
+flex-direction: column;
+}
+
+.form-social-links img{
+width: 2.25rem;
+height: 2.25rem;
+flex-shrink: 0;
+
+}
+
+.form-social-link-p{
+    margin-left: 1.25rem;
+    margin-right: 0.75rem;
+    display: flex; 
+    align-items: center;
+}
+
+.form-social-link-p p{
+color: var(--Colors-blue1100, #063643);
+font-family: "Open Sans";
+font-size: 1.125rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-left: 0.75rem;
+}
+
+.entre-contato {
+    display: flex;
+    flex-direction: row; /* Alinha os itens verticalmente */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza o conteúdo dentro da div */
+    margin: 0 auto; /* Centraliza a div horizontalmente no contêiner */
+    margin-bottom: 3rem;
+    width: 100%; /* Certifica-se de que a div ocupe toda a largura disponível */
+    max-width: 1200px; /* Ajuste a largura máxima da div se necessário */
+    position: relative;
+    right: -13.75%;
+}
+
+
+
+.span-form {
+color: var(--Colors-blue1100, #063643);
+font-family: Inter;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding-bottom: 1.5rem;
+margin-top: 2.31rem;
+position: relative;
+right: -30.15%;
+display: flex;
+
 }
 
 .equipe-container{
@@ -202,7 +306,7 @@ flex-shrink: 0;
     justify-content: center; /* Centraliza verticalmente */
     height: 100%; /* Garante que o container tenha altura suficiente */
     text-align: center; /* Alinha o texto no centro */
-    margin-top: 7.5rem;
+    margin-top: 5.5rem;
 }
 
 
@@ -238,6 +342,73 @@ top: 2.75rem;
 right: 52.88rem;
 }
 
+.form{
+height: 43.25rem;
+width: 37.5rem;
+display: flex;
+padding: 3.1875rem 2.5rem 2.875rem 2.5rem;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-start;
+gap: 1.75rem;
+border-radius: 0rem 0.5rem 0.5rem 0rem;
+border-top: 1px solid rgba(6, 54, 67, 0.40);
+border-right: 1px solid rgba(6, 54, 67, 0.40);
+border-bottom: 1px solid rgba(6, 54, 67, 0.40);
+background: #FAFDFF;
+}
+
+.form label{
+    color: var(--Colors-blue1100, #063643);
+font-family: Inter;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.form input{
+margin-top:0.5rem;
+width: 32.5rem;
+height: 3.75rem;
+flex-shrink: 0;
+border-radius: 0.5rem;
+border: 1px solid rgba(0, 0, 0, 0.40);
+box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+}
+
+.form button{
+display: flex;
+width: 9rem;
+height: 3.4375rem;
+padding: 0.5rem 0.25rem;
+justify-content: center;
+align-items: center;
+gap: 0.625rem;
+color: #F8F8FF;
+border-radius: 0.5rem;
+background: var(--Colors-blue1000, #0F637A);
+
+font-family: Poppins;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+
+/* FOOTER */
+  footer .container {
+    width: 120rem;
+    height: 17rem;
+    flex-shrink: 0;
+    border-top: 1px solid var(--Colors-blue300, #C7EBFB);
+    border-bottom: 1px solid var(--Colors-blue300, #C7EBFB);
+    background: #F8F8FF;
+    display: flex; /* Correção aqui */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 8.06rem;
+}
 
 .logo-footer {
     width: 12.5rem;
@@ -258,7 +429,7 @@ footer .container .contato {
     display: flex;
     flex-direction: column;
     align-items: flex-start; 
-    padding-bottom: 3.850rem; /* ESTIMATIVA PARA ALINHAD COM OS OUTROS h3 */
+    padding-bottom: 3.650rem; /* ESTIMATIVA PARA ALINHAD COM OS OUTROS h3 */
 }
 
 
