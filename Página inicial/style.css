@@ -900,6 +900,68 @@ body{
     border-bottom: 0.125rem solid rgba(0, 0, 0, 0.1);
 }
 
+#divAprPrincipal{
+    background-color: rgba(137, 197, 213, 1);
+    background-image: url(/public/fundo-animais-icons\ 2.svg);
+    font-family: poppins;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    
+}
+
+
+#divPrinc{
+    width: 73.875rem;
+}
+
+#divPrimeira{
+    padding: 1rem;
+}
+
+#divSecundaria{
+    width: 100%;
+    background-color: rgba(99, 179, 201, 1);
+    background-image: url(/public/fundo-animais-icons\ 2.svg);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#divSegunda{
+    width: 73.875rem;
+}
+#divSecTitulo{
+    padding: 2rem;
+}
+
+#divTerceira{
+    background-color: rgba(137, 197, 213, 1);
+    background-image: url(/public/fundo-animais-icons\ 2.svg);
+    padding: 1rem;
+}
+#divTerciaria{
+    width: 73.875rem;
+}
+#titApr{
+    font-size: 1.5rem;
+    font-weight: 700;
+    
+}
+#titSec{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+
+.apresentacao{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
