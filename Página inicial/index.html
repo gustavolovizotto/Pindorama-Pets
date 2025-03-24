@@ -39,6 +39,50 @@
     <img class='animal3'src="/public/banner princcipal 3.svg" alt="animais">
     <img class='waveform'src="/public/Waveform.svg" alt="forma geometrica">
 </div>
+
+<!-- Carrosel -->
+<div class="carrossel">
+    <button id="prev-btn"><img src="/public/arrow_back_ios_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="Seta para trás"></button>
+    
+    <div class="carrossel-content">
+        <div class="carrossel-container-1 active">
+            <h3>Campanha de vacinação</h3>
+            <p>Nos dias 19 a 28 de novembro</p>
+            <button>Saiba Mais</button>
+            <img src="/public/banner1-carrossel.svg" alt="Gato" class="img-banner-gato">
+            <img src="/public/seringa 1.svg" alt="Imagem de seringa" class="img-banner-seringa">
+            <img src="/public/para cinza.svg" alt="Pata de cachorro" class="img-banner-pata-1">
+            <img src="/public/para cinza.svg" alt="Pata de cachorro" class="img-banner-pata-2">
+        </div>
+
+        <div class="carrossel-container-2 active">
+            <h3>Campanha de adoção</h3>
+            <p>Dê um lar cheio de amor a quem só quer te fazer feliz! Adote um amigo de quatro patas e transforme sua vida e a dele.</p>
+            <button>Saiba Mais</button>
+            <img src="/public/banner2-fundo.svg" alt="Fundo" class="bg-banner2">
+            <img src="/public/cachorro banner 2.svg" alt="Cachorro" class="img-banner2-cachorro">
+            <img src="/public/gato banner 2.svg" alt="Gato" class="img-banner2-gato">
+        </div>
+
+        <div class="carrossel-container-3 active">
+            <h3>Banho e tosa: cuidado e saúde para seu pet</h3>
+            <p>Nossa clínica dispõe do serviço de higiene para seu Pet permanecer limpo, cheiroso e longe de parasitas.  </p>
+            <button>Saiba Mais</button>
+            <img src="/public/bgg-chuva banner 3.svg" alt="Fundo" class="bg-banner3">
+            <img src="/public/gato banner 3.svg" alt="Cachorro" class="img-banner3-gato">
+            <img src="/public/guarda chuva.svg" alt="Guarda chuva" class="img-banner3-guardachuva">
+        </div>
+    </div>
+
+    <button id="next-btn"><img src="/public/arrow_forward_ios_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="Seta para frente"></button>
+
+    <div class="indicadores">
+        <span class="dot active" onclick="mudarSlide(0)"></span>
+        <span class="dot" onclick="mudarSlide(1)"></span>
+        <span class="dot" onclick="mudarSlide(2)"></span>
+    </div>
+</div>
+<!-- Fim Carrosel -->
     
 <!-- Apresentação -->
 <div id="divAprPrincipal">
@@ -212,7 +256,7 @@
             <label for="nome">Mensagem</label>
             <input type="textarea" id="nome" name="nome">
         </div>
-        <button>Enviar</button>
+        <button>ENVIAR</button>
     </div>
 
 
@@ -254,5 +298,7 @@
             <p>UNECT JR. TODOS OS DIREITOS RESERVADOS.</p>
         </div>
 </footer>
+
+<script src="script.js"></script>
 </body>
 </html>
