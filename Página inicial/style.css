@@ -874,11 +874,8 @@ text-transform: uppercase;
     background-color: rgba(6, 54, 67, 1);
 }
 
-#imgSeta{
-    width: 1.125rem;
-    height: 1.125rem;
-}
-#divProxPag:active #imgSeta{
+
+#divProxPag:active .imgSeta{
     filter: brightness(0) invert(1);
 }
 
