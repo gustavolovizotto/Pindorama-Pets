@@ -149,6 +149,7 @@ body{
     left: 56.06rem;
 }
 
+
 /*Carrossel*/
 
 .carrossel {
@@ -824,15 +825,18 @@ text-transform: uppercase;
 
 /**/
 
-#divQuadroAvaliacao{
-    
+
+.divQuadroAvaliacao{
+   
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-family: "Poppins", open-Sans;
     color: rgba(6, 54, 67, 1);
-    padding: 5rem;
+    width: 100%;
+    min-height: 25rem;
+    box-sizing: border-box;
 }
 #divTextoAvaliacao{
     width: 100%;
@@ -841,6 +845,7 @@ text-transform: uppercase;
     font-weight: 700;
     padding-bottom: 1.875rem;
 }
+
 #divFooterQuadro{
     width: 100%;
     display: flex;
@@ -854,7 +859,8 @@ text-transform: uppercase;
     font-weight: 700;
 
 }
-#divProxPag{
+.divProxPag{
+    background-color: rgba(226, 245, 250, 1);
     width: 2.5rem;
     height: 1.875rem;
     border: 0.063rem;
@@ -866,16 +872,18 @@ text-transform: uppercase;
 }
 
 
-#divProxPag:hover{
+.divProxPag:hover{
     background-color:  rgba(107, 183, 203, 1);
     transition: 0.2S;
 }
-#divProxPag:active{
+.divProxPag:active{
     background-color: rgba(6, 54, 67, 1);
 }
 
-
-#divProxPag:active .imgSeta{
+.imgSeta {
+    cursor: pointer;
+}
+.divProxPag:active .imgSeta{
     filter: brightness(0) invert(1);
 }
 
@@ -988,6 +996,91 @@ text-transform: uppercase;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+/* Slider */
+.slider-container {
+    
+    position: relative;
+    width: 100%;
+    min-height: 25rem; 
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0; 
+    overflow: visible;
+
+}
+
+.slider {
+
+    position: relative;
+    width: 68.38638rem;
+    min-height: 25rem;
+    flex-shrink: 0;
+    overflow: visible; 
+
+}
+.slide1 {
+    opacity: 1;
+    display: block;
+}
+
+.slide1, .slide2, .slide3 {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    display: none; 
+    position: absolute;
+    width: 100%;
+    transition: opacity 0.5s ease;
+}
+
+
+.slider-container,
+.slider,
+.divQuadroAvaliacao,
+.slide1, .slide2, .slide3 {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+.divAvaliacao, .divFeedback, .linha {
+    border: none !important;
+}   
+
+
+#prevBtn, #nextBtn {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+#prevBtn[disabled], #nextBtn[disabled] {
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+
+.divQuadroAvaliacao {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+    display: none;
+}
+
+.divQuadroAvaliacao.active {
+    opacity: 1;
+    display: block;
+}
+
+
+.slider-container {
+    position: relative;
+    min-height: 25rem; 
 }
 
 
