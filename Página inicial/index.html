@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar Responsiva</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mobile_style.css">
     <script defer src="./script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,11 +18,13 @@
 <body>
     <header>
     <nav class="navbar">
-        <div class="container">
+        <div class="header-container">
             <a class="logo">
-                <img src="/public/Logo-horizontal.svg" alt="Logo">
+                <img src="/public/Menu.svg" alt="Menu" id="mobile-only" class="menu-mobile">
+                <img src="/public/Logo-horizontal.svg" alt="Logo" id="desktop-only" >
+                <img src="/public/Logo-header-mobile.svg"  alt="Logo" id="mobile-only" class="logo-header-mobile">
             </a>
-            <ul class="nav-links">
+            <ul class="nav-links" id="desktop-only">
                 <a>Início</a>
                 <a>Serviços</a>
                 <a>Sobre nós</a>
@@ -31,7 +34,7 @@
     </nav>
 </header>
 
-<div class="banner-central">
+<div class="banner-central" id="desktop-only">
     <span class='bc-span'>Cuidando do Seu Pet com Profissionalismo e Carinho</span>
     <button class='bc-button'>Entre em contato</button>
     <img class='animal1'src="/public/banner princiapl1.svg" alt="animais">
@@ -41,7 +44,7 @@
 </div>
 
 <!-- Carrosel -->
-<div class="carrossel">
+<div class="carrossel" id="desktop-only">
     <button id="prev-btn"><img src="/public/arrow_back_ios_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="Seta para trás"></button>
     
     <div class="carrossel-content">
@@ -86,7 +89,7 @@
     
 <!-- Apresentação -->
 <div id="divAprPrincipal">
-    <div id="divPrinc">
+    <div id="divPrinc" >
         <div id="divPrimeira" class="apresentacao">
             <div>
                 <img src="/public/logo.svg" alt="logo">
@@ -395,8 +398,13 @@
 <!-- Fim da div Entre-contato-->
 
 <footer>
+        <div class="social-links" id="mobile-only" >
+            <img src="/public/icon-whatsapp.svg" alt="instagram">
+            <img src="/public/icon-instagram.svg" alt="facebook">
+            <img src="/public/icon-face.svg" alt="twitter">
+        </div>
     <div class="container">
-        <div class="logo-footer">
+        <div class="logo-footer" id="desktop-only">
         <img src="/public/logo-icon.svg" alt="Logo">
         <div class="logo-name">
             <img src="/public/Logo-name.svg" alt="Logo">
@@ -417,8 +425,8 @@
             <li class="section-text">unect jr</li>
         </ul>
         <ul class="contato">
-        <h3>Nossos contatos</h3>
-        <div class="social-links">
+        <h3 id="desktop-only">Nossos contatos</h3>
+        <div class="social-links" id="desktop-only">
             <img src="/public/icon-whatsapp.svg" alt="instagram">
             <img src="/public/icon-instagram.svg" alt="facebook">
             <img src="/public/icon-face.svg" alt="twitter">
