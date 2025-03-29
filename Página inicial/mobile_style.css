@@ -10,7 +10,11 @@
     }
 
     #mobile-only {
-        display: flex;
+        display: none;
+    }
+
+    .mobile-only {
+        display: none;
     }
 
     body {
