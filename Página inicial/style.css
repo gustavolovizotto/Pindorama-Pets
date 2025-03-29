@@ -30,7 +30,11 @@ header {
     z-index: 1000;
 }
 
-#mobile-only{
+#mobile-only {
+    display: none;
+}
+
+.mobile-only {
     display: none;
 }
 

@@ -9,14 +9,6 @@
         display: none;
     }
 
-    #mobile-only {
-        display: none;
-    }
-
-    .mobile-only {
-        display: none;
-    }
-
     body {
         max-width: 100%;
     }
