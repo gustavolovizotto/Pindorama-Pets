@@ -30,13 +30,23 @@ header {
     z-index: 1000;
 }
 
-#mobile-only {
+#desktop-only, #mobile-only {
     display: none;
-}
-
-.mobile-only {
-    display: none;
-}
+  }
+  
+  /* Mostra no desktop (a partir de 394px) */
+  @media screen and (min-width: 24.58rem) {
+    #desktop-only {
+      display: block;
+    }
+  }
+  
+  /* Mostra no mobile (até 393px) */
+  @media screen and (max-width: 24.5625rem) {
+    #mobile-only {
+      display: block;
+    }
+  }
 
 
 .header-container {

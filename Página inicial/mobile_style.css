@@ -1,13 +1,5 @@
 
 @media (max-width: 24.5625rem) { 
-    /* Ajustes gerais */
-    #desktop-only {
-        display: none;
-    }
-
-    .desktop-only {
-        display: none;
-    }
 
     body {
         max-width: 100%;
