@@ -158,7 +158,8 @@
         <div class="slide1 divQuadroAvaliacao">
             <ul>
                 <li>
-                    <div id="divTextoAvaliacao">Avaliações (34)</div>
+                    <div id="desktop-only" class="divTextoAvaliacao">Avaliações (34)</div>
+                    <div id="mobile-only" class="divTextoAvaliacao">Avaliações (34)</div>
                 </li>
                 <li>
                     <div id="divPrim" class="divAvaliacao">
@@ -175,7 +176,7 @@
                         </div>
                     </div>
                 </li>
-                <div class="linha"></div>
+                <div  id="desktop-only" class="linha"></div>
                 <li>
                     <div id="divSec" class="divAvaliacao">
                         <div class="divFoto">
@@ -191,7 +192,7 @@
                         </div>
                     </div>
                 </li>
-                <div class="linha"></div>
+                <div id="desktop-only" class="linha"></div>
                 <li>
                     <div id="divTer" class="divAvaliacao">
                         <div class="divFoto">
@@ -211,8 +212,11 @@
 
             <div id="divFooterQuadro">
                 <div id="divNumPag">1</div>
-                <button  id="nextBtn" class="divProxPag">
+                <button id="desktop-only" class="nextBtn divProxPag">
                     <img class="imgSeta" src="/public/fotoArrow.svg">
+                </button>
+                <button id="mobile-only" class="nextBtn divProxPag">
+                    <img src="/public/arrow-Carrosel.svg" alt="">
                 </button>
             </div>
         </div>
@@ -220,7 +224,7 @@
         <div class="slide2 divQuadroAvaliacao">
             <ul>
                 <li>
-                    <div id="divTextoAvaliacao">Avaliações (34)</div>
+                    <div class="divTextoAvaliacao">Avaliações (34)</div>
                 </li>
                 <li>
                     <div id="divPrim" class="divAvaliacao">
@@ -272,12 +276,18 @@
             </ul>
 
             <div id="divFooterQuadro">
-                <button id="prevBtn" class="divProxPag">
+                <button id="desktop-only" class="divProxPag  prevBtn">
                     <img class="imgSeta" src="/public/arrowBack.svg">
                 </button>
+                <button id="mobile-only" class="divProxPag prevBtn">
+                    <img class="arrowCarroselBack" class="imgSeta" src="/public/arrow-Carrosel.svg">
+                </button>
                 <div id="divNumPag">2</div>
-                <button id="nextBtn" class="divProxPag">
+                <button id="desktop-only" class="divProxPag nextBtn">
                     <img class="imgSeta" src="/public/fotoArrow.svg">
+                </button>
+                <button id="mobile-only" class="nextBtn divProxPag">
+                    <img src="/public/arrow-Carrosel.svg" alt="">
                 </button>
             </div>
         </div>
@@ -286,7 +296,7 @@
         <div class="slide3 divQuadroAvaliacao">
             <ul>
                 <li>
-                    <div id="divTextoAvaliacao">Avaliações (34)</div>
+                    <div class="divTextoAvaliacao">Avaliações (34)</div>
                 </li>
                 <li>
                     <div id="divPrim" class="divAvaliacao">
@@ -338,8 +348,11 @@
             </ul>
 
             <div id="divFooterQuadro">
-                <button id="prevBtn" class="divProxPag">
+                <button id="desktop-only" class="divProxPag prevBtn">
                     <img class="imgSeta" src="/public/arrowBack.svg">
+                </button>
+                <button id="mobile-only" class="divProxPag prevBtn">
+                    <img class="arrowCarroselBack" class="imgSeta" src="/public/arrow-Carrosel.svg">
                 </button>
                 <div id="divNumPag">3</div>
             </div>

@@ -73,9 +73,9 @@ document.addEventListener("DOMContentLoaded", function() {
    
     const sliderContainer = document.querySelector(".slider");
     const slides = Array.from(document.querySelectorAll(".divQuadroAvaliacao"));
-    const prevButtons = document.querySelectorAll("#prevBtn");
-    const nextButtons = document.querySelectorAll("#nextBtn");
-    const pageIndicators = document.querySelectorAll("#divNumPag");
+    const prevButtons = document.querySelectorAll(".prevBtn");
+    const nextButtons = document.querySelectorAll(".nextBtn");
+    const pageIndicators = document.querySelectorAll(".divNumPag");
     
     let currentIndex = 0;
 

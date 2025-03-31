@@ -868,7 +868,6 @@ text-transform: uppercase;
 
 
 .divQuadroAvaliacao{
-   
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -879,7 +878,7 @@ text-transform: uppercase;
     min-height: 25rem;
     box-sizing: border-box;
 }
-#divTextoAvaliacao{
+.divTextoAvaliacao{
     width: 100%;
     font-size: 1.5rem;
     font-style: bold;
@@ -898,7 +897,6 @@ text-transform: uppercase;
 #divNumPag{
     font-style: bold;
     font-weight: 700;
-
 }
 .divProxPag{
     background-color: rgba(226, 245, 250, 1);
@@ -1045,7 +1043,6 @@ text-transform: uppercase;
     position: relative;
     width: 100%;
     min-height: 25rem; 
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1075,7 +1072,6 @@ text-transform: uppercase;
     opacity: 0;
     display: none; 
     position: absolute;
-    width: 100%;
     transition: opacity 0.5s ease;
 }
 
@@ -1090,17 +1086,17 @@ text-transform: uppercase;
 }
 
 
-.divAvaliacao, .divFeedback, .linha {
+.divAvaliacao, .divFeedback {
     border: none !important;
 }   
 
 
-#prevBtn, #nextBtn {
+.prevBtn, .nextBtn {
     cursor: pointer;
     transition: opacity 0.3s ease;
 }
 
-#prevBtn[disabled], #nextBtn[disabled] {
+.prevBtn[disabled], .nextBtn[disabled] {
     pointer-events: none;
     opacity: 0.5;
     cursor: not-allowed;
