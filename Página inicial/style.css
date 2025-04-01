@@ -37,14 +37,14 @@ header {
   /* Mostra no desktop (a partir de 394px) */
   @media screen and (min-width: 24.58rem) {
     #desktop-only {
-      display: block;
+      display: flex;
     }
   }
   
   /* Mostra no mobile (até 393px) */
   @media screen and (max-width: 24.5625rem) {
     #mobile-only {
-      display: block;
+      display: flex;
     }
   }
 
