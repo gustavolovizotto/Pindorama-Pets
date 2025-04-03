@@ -571,10 +571,16 @@ position: absolute;
 left: 2.25rem;
 }
 
-.inf-rua{
-    
+.inf-rua span{
+    color: var(--Colors-blue1100, #063643);
+font-family: Inter;
+font-size: 1.25rem;
+font-style: italic;
+font-weight: 400;
+line-height: 1.625rem;
     position: absolute;
     top: 7.19rem;
+    left: 1.25rem;
 }
 
 .inf-contato h3 {
@@ -667,7 +673,7 @@ left: 2.25rem;
     font-weight: 700;
     margin-top: 2.31rem;
     display: flex;
-    margin-left: 28.12rem;
+    margin-left: 16.12rem;
     margin-bottom: 1.5rem;
 }
 
