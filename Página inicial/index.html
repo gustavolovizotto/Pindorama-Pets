@@ -90,21 +90,34 @@
 <!-- Fim Carrosel -->
     
 <!-- Apresentação -->
-<div id="divAprPrincipal">
-    <div id="divPrinc" >
-        <div id="divPrimeira" class="apresentacao">
+<div class="divAprPrincipal">
+    <div class="divPrinc" >
+        <div class="apresentacao divPrimeira">
             <div>
-                <img src="/public/logo.svg" alt="logo">
+                <img id="desktop-only" src="/public/logo.svg" alt="logo">
+                <p id="mobile-only" class="titApr">Quem somos?</p>
+                <img id="mobile-only" class="imgLogo-mob" src="/public/Whitelogo.svg" alt="logo">
+                
             </div>
             <div>        
-                <p id="titApr">Quem somos?</p>
+                <p id="desktop-only" class="titApr">Quem somos?</p>
                 <br>
                 <p>Nossa clínica veterinária é comprometida com o cuidado e bem-estar de cada pet, com uma equipe dedicada e instalações modernas, buscamos garantir saúde e conforto em cada atendimento. Cuidamos do seu animalzinho como se fosse nosso!</p>
+                <p id="mobile-only" class="txtApr">Cuidamos do seu animalzinho com amor!</p>
             </div>
         </div>
     </div>
-    <div id="divSecundaria">
-        <div id="divSegunda" class="apresentacao">
+    <div id="mobile-only" class="divMobileAp">
+        <div class="divMobileSec">
+            <p class="titApr">Nossos serviços visam o cuidado do seu pet </p>
+            <br>
+            <p>Na nossa clínica veterinária, cada consulta é realizada com dedicação e atenção aos detalhes, garantindo o melhor cuidado para o seu pet.</p>
+            <button class="btnConsulta">Agende uma consulta</button>
+        </div>
+    </div>
+
+    <div id="desktop-only" class="divSecundaria">
+        <div  class="apresentacao divSegunda">
             <div id="divSecTitulo">
                 <p id="titSec">Nossos serviços</p>
                 <br>
@@ -113,8 +126,8 @@
             <div>Na nossa clínica veterinária, cada consulta é realizada com dedicação e atenção aos detalhes, garantindo o melhor cuidado para o seu pet. Contamos com uma equipe experiente e atualizada para oferecer diagnósticos precisos e tratamentos eficazes. </div>
         </div>
     </div>
-    <div id="divTerciaria">
-        <div id="divTerceira" class="apresentacao">
+    <div id="desktop-only" class="divTerciaria">
+        <div class="apresentacao divTerceira">
             <div>
                 Nós cuidamos do seu pet com o carinho e respeito que ele merece. Nossa equipe dedica atenção a cada detalhe, proporcionando um ambiente acolhedor e seguro para que seu animalzinho se sinta em casa. 
             </div>
@@ -210,7 +223,7 @@
                 </li>
             </ul>
 
-            <div id="divFooterQuadro">
+            <div id="divFooterQuadro"  class="divBtnQuadro">
                 <div id="divNumPag">1</div>
                 <button id="desktop-only" class="nextBtn divProxPag">
                     <img class="imgSeta" src="/public/fotoArrow.svg">
@@ -241,7 +254,7 @@
                         </div>
                     </div>
                 </li>
-                <div class="linha"></div>
+                <div  id="desktop-only" class="linha"></div>
                 <li>
                     <div id="divSec" class="divAvaliacao">
                         <div class="divFoto">
@@ -257,7 +270,7 @@
                         </div>
                     </div>
                 </li>
-                <div class="linha"></div>
+                <div  id="desktop-only" class="linha"></div>
                 <li>
                     <div id="divTer" class="divAvaliacao">
                         <div class="divFoto">
@@ -275,7 +288,7 @@
                 </li>
             </ul>
 
-            <div id="divFooterQuadro">
+            <div id="divFooterQuadro" class="divBtnQuadro">
                 <button id="desktop-only" class="divProxPag  prevBtn">
                     <img class="imgSeta" src="/public/arrowBack.svg">
                 </button>
@@ -313,7 +326,7 @@
                         </div>
                     </div>
                 </li>
-                <div class="linha"></div>
+                <div  id="desktop-only" class="linha"></div>
                 <li>
                     <div id="divSec" class="divAvaliacao">
                         <div class="divFoto">
@@ -329,7 +342,7 @@
                         </div>
                     </div>
                 </li>
-                <div class="linha"></div>
+                <div  id="desktop-only" class="linha"></div>
                 <li>
                     <div id="divTer" class="divAvaliacao">
                         <div class="divFoto">
@@ -347,7 +360,7 @@
                 </li>
             </ul>
 
-            <div id="divFooterQuadro">
+            <div id="divFooterQuadro" class="divBtnQuadro">
                 <button id="desktop-only" class="divProxPag prevBtn">
                     <img class="imgSeta" src="/public/arrowBack.svg">
                 </button>

@@ -81,7 +81,79 @@
     }
 
     /*Apresentação*/
+    .divAprPrincipal{
+        width: 100%;
+    }
+    .divPrinc{
+        width: 100%;
+    }
 
+    .divPrimeira{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .imgLogo-mob{
+        width: 10.438rem;
+        height: 6.375rem;
+    }
+
+    .divMobileAp{
+        max-width: 100%;
+        height: 22.25rem;
+        background-color: rgba(99, 179, 201, 1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        background-image: url(/public/fundo-animais-icons\ 2.svg);
+    }
+    .txtApr{
+        padding-top: 0.875rem;
+        font-weight: 700;
+        color: rgba(6, 54, 67, 1);
+    }
+
+    .divMobileSec{
+        max-width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .titApr{
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: rgba(6, 54, 67, 1);
+    }
+    .btnConsulta{
+        width: 12.938rem;
+        height: 2.438rem;
+        top: 12.94rem;
+        left: 8.19rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.25rem;
+        background: #F8F8FF;
+        color: #063643;
+        font-family: Poppins;
+        font-weight: 700;
+        cursor: pointer;
+        border: none;
+        margin: 1rem;
+        transition: all 300ms ease-out;
+    }
+    .btnConsulta:hover{
+        background-color: #063643;
+        color: #F8F8FF;
+    }
     /*Fim da apresentação*/
 
     /*Quadro de avaliação*/
@@ -105,12 +177,12 @@
         align-items: center;
     }
     .slider{
-        max-width: 100%;
+        width: 100%;
         display: flex;
     }
     .divTextoAvaliacao{
         width: 100%;
-        font-size: 2rem;
+        font-size: 1.25rem;
         font-style: bold;
         font-weight: 700;
         padding-bottom: 1.875rem;
@@ -118,6 +190,25 @@
         justify-content: center;
         align-items: center;
     }
+    .divQuadroAvaliacao{
+        width: 100%;
+    }
+    .divAvaliacao{
+        width: 100%;
+    }
+    .divEstrela{
+        width: 100%;
+    }
+    .divNomeFeed{
+        width: 100%;
+        padding-bottom: 0.200rem;
+        font-size: 0.828;
+    }
+    .divTextoFeed{
+        width: 100%;
+        font-size: 0.75rem;
+    }
+
     .slide1, .slide2, .slide3 {
         width: 100%;
         height: 100%;
@@ -133,6 +224,10 @@
         height: 4.5rem;
         padding: 0.28rem;
     }
+    .divBtnQuadro{
+        margin-top: 1rem;
+    }
+
     /*Fim do Quadro de avaliação*/
 
 

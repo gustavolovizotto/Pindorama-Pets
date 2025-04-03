@@ -967,15 +967,13 @@ text-transform: uppercase;
     display: flex;
     flex-direction: row;
     gap: 1.25rem;
-    
-    
 }
 .linha{
     width: 100%;
     border-bottom: 0.125rem solid rgba(0, 0, 0, 0.1);
 }
 
-#divAprPrincipal{
+.divAprPrincipal{
     background-color: rgba(137, 197, 213, 1);
     background-image: url(/public/fundo-animais-icons\ 2.svg);
     font-family: poppins;
@@ -987,15 +985,15 @@ text-transform: uppercase;
 }
 
 
-#divPrinc{
+.divPrinc{
     width: 73.875rem;
 }
 
-#divPrimeira{
+.divPrimeira{
     padding: 1rem;
 }
 
-#divSecundaria{
+.divSecundaria{
     width: 100%;
     background-color: rgba(99, 179, 201, 1);
     background-image: url(/public/fundo-animais-icons\ 2.svg);
@@ -1004,25 +1002,24 @@ text-transform: uppercase;
     justify-content: center;
     align-items: center;
 }
-#divSegunda{
+.divSegunda{
     width: 73.875rem;
 }
 #divSecTitulo{
     padding: 2rem;
 }
 
-#divTerceira{
+.divTerceira{
     background-color: rgba(137, 197, 213, 1);
     background-image: url(/public/fundo-animais-icons\ 2.svg);
     padding: 1rem;
 }
-#divTerciaria{
+.divTerciaria{
     width: 73.875rem;
 }
-#titApr{
+.titApr{
     font-size: 1.5rem;
     font-weight: 700;
-    
 }
 #titSec{
     font-weight: 700;
