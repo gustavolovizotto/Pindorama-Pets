@@ -39,6 +39,10 @@ header {
     #desktop-only {
       display: flex;
     }
+  
+    #desktop-only form {
+        display: block;
+    }
   }
   
   /* Mostra no mobile (até 393px) */
@@ -557,13 +561,20 @@ transition: all 300ms ease-out;
 }
 
 .inf-contato p {
-    color: var(--Colors-blue1100, #063643);
-    font-family: Inter, sans-serif;
-    font-size: 1.25rem;
-    font-style: italic;
-    font-weight: 400;
-    line-height: 1.625rem;
-    margin-left: 1.31rem;
+color: var(--Colors-blue1100, #063643);
+font-family: "Open Sans";
+font-size: 1.125rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+position: absolute;
+left: 2.25rem;
+}
+
+.inf-rua{
+    
+    position: absolute;
+    top: 7.19rem;
 }
 
 .inf-contato h3 {
@@ -571,7 +582,9 @@ transition: all 300ms ease-out;
     font-family: Inter, sans-serif;
     font-size: 1.25rem;
     font-weight: 700;
-    margin: 3.19rem 0 2.5rem 1.31rem;
+    position: absolute;
+    top: 3.19rem;
+    left: 1.31rem;
 }
 
 .inf-contato > img:first-of-type {
@@ -579,14 +592,26 @@ transition: all 300ms ease-out;
     height: 15.25975rem;
     border-radius: 0.25rem;
     border: 1px solid rgba(15, 99, 122, 0.40);
-    display: block;
-    margin: 4.38rem auto 2.93rem;
+    display: flex;
+    position: absolute;
+    top: 16.44rem;
+    left: 2.19rem;
+}
+
+.pin-map{
+    height: 1.25rem;
+    width: 1.25rem;
+    position: absolute;
+    top: 21.19rem;
+    left: 12.44rem;
 }
 
 .form-social-links {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    position: relative;
+
 }
 
 .form-social-links img {
@@ -594,10 +619,27 @@ transition: all 300ms ease-out;
     height: 2.25rem;
 }
 
-.form-social-link-p {
+.form-social-link-p-1 {
     margin-left: 1.25rem;
     display: flex;
     align-items: center;
+    position: absolute;
+    top: 34.62rem;
+
+}
+.form-social-link-p-2 {
+    margin-left: 1.25rem;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 37.38rem;
+}
+.form-social-link-p-3 {
+    margin-left: 1.25rem;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 40.12rem;
 }
 
 .form-social-link-p p {

@@ -22,7 +22,7 @@
     <nav class="navbar">
         <div class="header-container">
             <a class="logo">
-                <img src="/public/Menu.svg" alt="Menu" id="mobile-only"  class="menu-mobile">
+                <img src="/public/Menu.svg" alt="Menu" id="mobile-only" >
                 <img src="/public/Logo-horizontal.svg" alt="Logo" id="desktop-only" >
                 <img src="/public/Logo-header-mobile.svg"  alt="Logo" id="mobile-only" class="logo-header-mobile">
             </a>
@@ -35,15 +35,19 @@
         </div>
     </nav>
 </header>
-
-<div class="banner-central" id="desktop-only">
-    <span class='bc-span'>Cuidando do Seu Pet com Profissionalismo e Carinho</span>
+<!-- Fim do Header -->
+<!-- Começo do Banner Principal -->
+<div class="banner-central" >
+    <span class='bc-span' id="desktop-only">Cuidando do Seu Pet com Profissionalismo e Carinho</span>
+    <span class='bc-span' id="mobile-only">Cuidamos do seu animal com muito amor</span>
     <button class='bc-button'>Entre em contato</button>
+    <img class='elipse'src="/public/Ellipse 5.svg" alt="Elipse" id="mobile-only">
     <img class='animal1'src="/public/banner princiapl1.svg" alt="animais">
     <img class='animal2'src="/public/banner principal 2.svg" alt="animais">
     <img class='animal3'src="/public/banner princcipal 3.svg" alt="animais">
-    <img class='waveform'src="/public/Waveform.svg" alt="forma geometrica">
+    <img class='waveform'src="/public/Waveform.svg" alt="forma geometrica" id ="desktop-only">
 </div>
+<!-- Fim do Banner Principal -->
 
 <!-- Carrosel -->
 <div class="carrossel" id="desktop-only">
@@ -139,9 +143,9 @@
 </div>  
 <!-- Fim Apresentação -->
 
-    
+<span class="span-inf-profissional" id="mobile-only">Nossos profissionais</span>
 <div class="equipe-container">
-<span>Nossos profissionais</span>
+<span id="desktop-only">Nossos profissionais</span>
 <div class="inf-profissional">
     <img src="/public/medico1.svg" alt="Profissional da Saúde">
     <h3>Carlos de Souza</h3>
@@ -379,23 +383,24 @@
 <div class="entre-contato">
     <div class="inf-contato" id="desktop-only">
         <h3>Localização</h3>
-        <p>Rua - Fulana de tal, 9999<br>CEP 99999-999<br>Pindorama/SP</p>
+        <span class="inf-rua">Rua - Fulana de tal, 9999<br>CEP 99999-999<br>Pindorama/SP</span>
         <img src="/public/map 1.svg" alt="Contato">
+        <div class="pin-map"><img src="/public/Map pin.svg" alt="PIN"></div>
 
         <div class="form-social-links">
 
-            <div class="form-social-link-p">
+            <div class="form-social-link-p-1">
             <img src="/public/icon-whatsapp.svg" alt="instagram">
-            <p>(99)-99999999</p>
+            <p class="p1">(99)-99999999</p>
             </div>
-            <div class="form-social-link-p">
+            <div class="form-social-link-p-2">
             <img src="/public/icon-instagram.svg" alt="facebook">
-            <p>@PindoramaClinica</p>
+            <p class="p2">@PindoramaClinica</p>
             </div>
 
-            <div class="form-social-link-p">
+            <div class="form-social-link-p-3">
             <img src="/public/icon-face.svg "  alt="twitter">
-            <p>PindoramaClinica</p>
+            <p class="p3">PindoramaClinica</p>
             </div>
 
         </div>
