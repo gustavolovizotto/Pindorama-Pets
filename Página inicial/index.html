@@ -19,7 +19,7 @@
 
 <body>
     <header>
-    <nav class="navbar">
+    <nav class="navbar" >
         <div class="header-container">
             <a class="logo">
                 <img src="/public/Menu.svg" alt="Menu" id="mobile-only" >
@@ -27,10 +27,10 @@
                 <img src="/public/Logo-header-mobile.svg"  alt="Logo" id="mobile-only" class="logo-header-mobile">
             </a>
             <ul class="nav-links" id="desktop-only">
-                <a>Início</a>
-                <a>Serviços</a>
-                <a>Sobre nós</a>
-                <a>Contato</a>
+               <li><a>Início</a></li>
+               <li><a>Serviços</a></li>
+               <li><a>Sobre nós</a></li>
+               <li><a>Contato</a></li>
             </ul>
         </div>
     </nav>
@@ -230,10 +230,10 @@
             <div id="divFooterQuadro"  class="divBtnQuadro">
                 <div id="divNumPag">1</div>
                 <button id="desktop-only" class="nextBtn divProxPag">
-                    <img class="imgSeta" src="/public/fotoArrow.svg">
+                    <img class="imgSeta" src="/public/fotoArrow.svg" alt="Seta para frente">
                 </button>
                 <button id="mobile-only" class="nextBtn divProxPag">
-                    <img src="/public/arrow-Carrosel.svg" alt="">
+                    <img src="/public/arrow-Carrosel.svg" alt="seta para frente">
                 </button>
             </div>
         </div>
@@ -294,17 +294,17 @@
 
             <div id="divFooterQuadro" class="divBtnQuadro">
                 <button id="desktop-only" class="divProxPag  prevBtn">
-                    <img class="imgSeta" src="/public/arrowBack.svg">
+                    <img class="imgSeta" src="/public/arrowBack.svg" alt="Seta para trás">
                 </button>
                 <button id="mobile-only" class="divProxPag prevBtn">
-                    <img class="arrowCarroselBack" class="imgSeta" src="/public/arrow-Carrosel.svg">
+                    <img class="arrowCarroselBack" alt="Seta para trás" class="imgSeta" src="/public/arrow-Carrosel.svg">
                 </button>
                 <div id="divNumPag">2</div>
                 <button id="desktop-only" class="divProxPag nextBtn">
-                    <img class="imgSeta" src="/public/fotoArrow.svg">
+                    <img class="imgSeta" src="/public/fotoArrow.svg" alt="Seta para frente">
                 </button>
                 <button id="mobile-only" class="nextBtn divProxPag">
-                    <img src="/public/arrow-Carrosel.svg" alt="">
+                    <img src="/public/arrow-Carrosel.svg" alt="Seta para frente">
                 </button>
             </div>
         </div>
@@ -363,21 +363,20 @@
                     </div>
                 </li>
             </ul>
-
             <div id="divFooterQuadro" class="divBtnQuadro">
                 <button id="desktop-only" class="divProxPag prevBtn">
-                    <img class="imgSeta" src="/public/arrowBack.svg">
+                    <img class="imgSeta" alt="Seta para frente" src="/public/arrowBack.svg">
                 </button>
                 <button id="mobile-only" class="divProxPag prevBtn">
-                    <img class="arrowCarroselBack" class="imgSeta" src="/public/arrow-Carrosel.svg">
+                    <img class="arrowCarroselBack" alt="Seta para trás" class="imgSeta" src="/public/arrow-Carrosel.svg">
                 </button>
                 <div id="divNumPag">3</div>
             </div>
         </div>
     </div>
 </div>    
+<div id="HERE"></div>
 <!-- Fim da div Quadro de avaliação-->    
-
 <!-- Começo da div Entre-contato-->
 <span class="span-form" id="desktop-only">Entre em Contato</span>
 <div class="entre-contato">
@@ -410,7 +409,7 @@
 
     <!-- Começo da segunda parte do Formulário-->
     <span class="span-form-mobile" id="mobile-only">Entre em contato</span>
-    <div class="form">
+    <form class="form">
         <div class="form-input">
             <label for="nome">Nome</label>
             <input type="text" id="nome" name="nome">
@@ -428,8 +427,8 @@
             <input type="textarea" id="nome" name="nome">
         </div>
         <button>ENVIAR</button>
-    </div>
-</div>
+        </div> 
+</form>
 <!-- Fim da div Entre-contato-->
 
 <footer>

@@ -70,6 +70,7 @@ header {
     width: 15.625rem;
     height: 4.364rem;
     margin: 2.19rem 24.44rem 2.2rem 24.38rem;
+    cursor: pointer;
 }
 
 .nav-links {
@@ -113,6 +114,7 @@ header {
     background: var(--Colors-white, #F8F8FF);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
     margin-top: 10rem;
+    scroll-margin-top: 200px;
 }
 
 .bc-span {
@@ -222,8 +224,8 @@ header {
     background: var(--Colors-blue600, #63B3C9);
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
     opacity: 0;
-    display: none; /* Garante que apenas um apareça */
-    transition: opacity 0.5s ease-in-out;
+    display: none;
+    transition: ease-in-out 1s;
 }
 
 /* Apenas o slide ativo fica visível */
@@ -540,6 +542,7 @@ transition: all 300ms ease-out;
     background-color: #50a9c6;
 }
 
+
 /*Fim carrossel*/
 
 /*Entre em contato FOrm*/
@@ -675,6 +678,7 @@ line-height: 1.625rem;
     display: flex;
     margin-left: 23%;
     margin-bottom: 1.5rem;
+    scroll-margin-top: 150px
 }
 
 .equipe-container {
@@ -1039,6 +1043,7 @@ text-transform: uppercase;
 
 .divPrimeira{
     padding: 1rem;
+    scroll-margin-top: 100px;
 }
 
 .divSecundaria{
@@ -1049,6 +1054,7 @@ text-transform: uppercase;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    scroll-margin-top: 130px;
 }
 .divSegunda{
     width: 73.875rem;
