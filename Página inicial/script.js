@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+/*document.addEventListener("DOMContentLoaded", () => {
     // Código do carrossel
     let currentSlide = 0;
     const slides = document.querySelectorAll(".carrossel-content > div");
@@ -127,6 +127,82 @@ document.addEventListener("DOMContentLoaded", function() {
                 updateSlider();
             }
         });
+    });
+
+    updateSlider();
+});*/
+
+document.addEventListener("DOMContentLoaded", () => {
+    // ===== Carrossel =====
+    let currentSlide = 0;
+    const slides = document.querySelectorAll(".carrossel-content > div");
+    const dots = document.querySelectorAll(".dot");
+    const prevBtn = document.getElementById("prev-btn");
+    const nextBtn = document.getElementById("next-btn");
+
+    const mudarSlide = (index) => {
+        slides.forEach((slide, i) => slide.classList.toggle("active", i === index));
+        dots.forEach((dot, i) => dot.classList.toggle("active", i === index));
+        currentSlide = index;
+    };
+
+    prevBtn?.addEventListener("click", () => mudarSlide((currentSlide - 1 + slides.length) % slides.length));
+    nextBtn?.addEventListener("click", () => mudarSlide((currentSlide + 1) % slides.length));
+    dots.forEach((dot, index) => dot.addEventListener("click", () => mudarSlide(index)));
+
+    mudarSlide(0);
+
+    // ===== Scroll suave para seções =====
+    const sectionMap = {
+        "Início": ".banner-central",
+        "Serviços": ".divSecundaria",
+        "Sobre nós": ".divPrimeira",
+        "Contato": ".span-form"
+    };
+
+    document.querySelector("header nav ul.nav-links")?.addEventListener("click", (e) => {
+        if (e.target.tagName === "A") {
+            e.preventDefault();
+            const targetSection = document.querySelector(sectionMap[e.target.textContent.trim()]);
+            targetSection?.scrollIntoView({ behavior: "smooth" });
+        }
+    });
+
+    // ===== Logo do footer clicável =====
+    document.querySelector(".logo-footer img")?.addEventListener("click", (e) => {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+    // ===== Logo do Header clicável =====
+    document.querySelector(".logo")?.addEventListener("click", (e) => {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    // ===== Slider de Avaliações =====
+    const slidesAvaliacoes = document.querySelectorAll(".divQuadroAvaliacao");
+    const pageIndicators = document.querySelectorAll(".divNumPag");
+    let currentIndex = 0;
+
+    const updateSlider = () => {
+        slidesAvaliacoes.forEach((slide, i) => {
+            slide.style.display = i === currentIndex ? "block" : "none";
+            slide.style.opacity = i === currentIndex ? "1" : "0";
+        });
+
+        pageIndicators.forEach(indicator => indicator.textContent = currentIndex + 1);
+
+        document.querySelectorAll(".prevBtn").forEach(btn => btn.style.opacity = currentIndex === 0 ? "0.5" : "1");
+        document.querySelectorAll(".nextBtn").forEach(btn => btn.style.opacity = currentIndex === slidesAvaliacoes.length - 1 ? "0.5" : "1");
+    };
+
+    document.querySelector(".slider")?.addEventListener("click", (e) => {
+        if (e.target.classList.contains("prevBtn") && currentIndex > 0) {
+            currentIndex--;
+        } else if (e.target.classList.contains("nextBtn") && currentIndex < slidesAvaliacoes.length - 1) {
+            currentIndex++;
+        }
+        updateSlider();
     });
 
     updateSlider();
