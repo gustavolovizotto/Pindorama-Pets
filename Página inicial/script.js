@@ -141,7 +141,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const nextBtn = document.getElementById("next-btn");
 
     const mudarSlide = (index) => {
-        slides.forEach((slide, i) => slide.classList.toggle("active", i === index));
+        slides.forEach((slide, i) => 
+            slide.classList.toggle("active", i === index));
         dots.forEach((dot, i) => dot.classList.toggle("active", i === index));
         currentSlide = index;
     };
@@ -186,24 +187,45 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const updateSlider = () => {
         slidesAvaliacoes.forEach((slide, i) => {
-            slide.style.display = i === currentIndex ? "block" : "none";
-            slide.style.opacity = i === currentIndex ? "1" : "0";
+            slide.classList.remove("fade-in");
+    
+            if (i === currentIndex) {
+                slide.classList.add("fade-in");
+            }
         });
-
-        pageIndicators.forEach(indicator => indicator.textContent = currentIndex + 1);
-
-        document.querySelectorAll(".prevBtn").forEach(btn => btn.style.opacity = currentIndex === 0 ? "0.5" : "1");
-        document.querySelectorAll(".nextBtn").forEach(btn => btn.style.opacity = currentIndex === slidesAvaliacoes.length - 1 ? "0.5" : "1");
+    
+        // Atualiza número da página
+        slidesAvaliacoes.forEach((slide, i) => {
+            const pageNum = slide.querySelector(".divNumPag");
+            if (pageNum) {
+                pageNum.textContent = i === currentIndex ? currentIndex + 1 : "";
+            }
+        });
+    
+        // Botões
+        document.querySelectorAll(".prevBtn").forEach(btn => {
+            btn.style.opacity = currentIndex === 0 ? "0.5" : "1";
+            btn.style.pointerEvents = currentIndex === 0 ? "none" : "auto";
+        });
+    
+        document.querySelectorAll(".nextBtn").forEach(btn => {
+            btn.style.opacity = currentIndex === slidesAvaliacoes.length - 1 ? "0.5" : "1";
+            btn.style.pointerEvents = currentIndex === slidesAvaliacoes.length - 1 ? "none" : "auto";
+        });
     };
+    
+    
+    
+    
 
     document.querySelector(".slider")?.addEventListener("click", (e) => {
-        if (e.target.classList.contains("prevBtn") && currentIndex > 0) {
+        if (e.target.closest(".prevBtn") && currentIndex > 0) {
             currentIndex--;
-        } else if (e.target.classList.contains("nextBtn") && currentIndex < slidesAvaliacoes.length - 1) {
+            updateSlider();
+        } else if (e.target.closest(".nextBtn") && currentIndex < slidesAvaliacoes.length - 1) {
             currentIndex++;
+            updateSlider();
         }
-        updateSlider();
-    });
-
+    }); 
     updateSlider();
 });

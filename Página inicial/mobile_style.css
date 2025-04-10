@@ -297,7 +297,7 @@ margin-left: 4.38rem;
     .divProxPag{
         border: none;
     }
-    #divFooterQuadro{
+    .divFooterQuadro{
         padding: 0.25rem;
         display: flex;
         align-items: center;
@@ -314,8 +314,10 @@ margin-left: 4.38rem;
         align-items: center;
     }
     .slider{
+        position: relative;
         width: 100%;
-        display: flex;
+        height: auto;
+        min-height: 30rem; /* ajuste para evitar "pulo" de layout */
     }
     .divTextoAvaliacao{
         width: 100%;
@@ -329,6 +331,7 @@ margin-left: 4.38rem;
     }
     .divQuadroAvaliacao{
         width: 100%;
+        background-color: rgba(226, 245, 250, 1);
     }
     .divAvaliacao{
         width: 100%;
@@ -351,9 +354,10 @@ margin-left: 4.38rem;
         height: 100%;
         box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
         opacity: 0;
-        display: none; 
         position: absolute;
-        transition: opacity 0.5s ease;
+        transition: opacity 0.5s ease;  
+        display: flex; 
+        flex-direction: column;
     }
     
     .fotoFeed{
@@ -541,6 +545,4 @@ line-height: normal;
 text-transform: uppercase;
 position: static;
 }
-
-/**/
 }
